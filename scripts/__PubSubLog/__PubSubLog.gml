@@ -5,10 +5,11 @@ function __PubSubLog(){
 		return	
 	}
 	
-	var log = PUB_SUB_LOG_TAG
+	var log = ""
+		
 	for(var i = 0; i < argument_count; i++){
 		log += string(argument[i])
 	}
 	
-	show_debug_message(log)
+	print(PUB_SUB_LOG_TAG, log)
 }	
