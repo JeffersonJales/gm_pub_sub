@@ -7,7 +7,8 @@ function print(tag, str_message){
 	var _sec = string_replace(string_format(date_get_second(_date), 2, 0), " ", "0") 
 	var _mili = string_replace(string_format(current_time % 1000, 3, 0), " ", "0")
 	
-	var _log = "| " + 
+	var _log = 
+		"| " + 
 		string(date_get_year(_date))	+ "-" +
 		string(date_get_month(_date))	+ "-" +
 		string(date_get_day(_date))		+ "  " + 
